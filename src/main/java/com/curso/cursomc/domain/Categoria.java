@@ -2,21 +2,28 @@ package com.curso.cursomc.domain;
 
 import java.io.Serializable;
 import java.util.Objects;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
 public class Categoria implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	private String nomeString;
+	private String nome;
 	
 	public Categoria() {
 		
 	}
 
-	public Categoria(Integer id, String nomeString) {
+	public Categoria(Integer id, String nome) {
 		super();
 		this.id = id;
-		this.nomeString = nomeString;
+		this.nome = nome;
 	}
 
 	public Integer getId() {
@@ -27,12 +34,12 @@ public class Categoria implements Serializable{
 		this.id = id;
 	}
 
-	public String getNomeString() {
-		return nomeString;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setNomeString(String nomeString) {
-		this.nomeString = nomeString;
+	public void setNomeString(String nome) {
+		this.nome = nome;
 	}
 
 	@Override
