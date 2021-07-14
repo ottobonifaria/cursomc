@@ -2,7 +2,6 @@ package com.curso.cursomc.domain;
 
 import com.curso.cursomc.enums.EstadoPagamento;
 import com.fasterxml.jackson.annotation.JsonFormat;
-
 import javax.persistence.Entity;
 import java.util.Date;
 

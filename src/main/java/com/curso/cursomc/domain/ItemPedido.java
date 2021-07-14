@@ -2,7 +2,6 @@ package com.curso.cursomc.domain;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import java.io.Serializable;
